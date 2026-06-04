@@ -1,6 +1,6 @@
 # A development container for Haskell
 
-This is an opinionated [Dev Container](https://containers.dev) for Haskell.
+This is an opinionated [Development Container](https://containers.dev) for Haskell.
 
 ## Features
 
@@ -15,9 +15,9 @@ To open the integrated GHCi shell, press the yellow lambda symbol in the top-rig
 
 ## Using with Visual Studio Code
 
-Follow the steps below to use the Dev Container with Visual Studio Code:
+Follow the steps below to use the Development Container with Visual Studio Code:
 
-1. Follow the [Getting Started](https://code.visualstudio.com/docs/remote/containers#_getting-started) instructions to configure Visual Studio Code and Docker for use with Dev Containers.
+1. Follow the [Getting Started](https://code.visualstudio.com/docs/remote/containers#_getting-started) instructions to configure Visual Studio Code and Docker for use with Development Containers.
 2. Clone this repository. You can checkout another branch to use a different version.
 3. Open the repository using Visual Studio Code.
 4. Click `Reopen in Container` when Visual Studio Code prompts you, or open the command palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) and execute the command `>Dev Containers: Reopen in Container`.
@@ -27,7 +27,7 @@ Follow the steps below to use the Dev Container with Visual Studio Code:
 
 ## How does it work
 
-Visual Studio Code supports [Dev Containers](https://code.visualstudio.com/docs/remote/containers) (i.e. using a Docker image as a development environment). It automates the hassle of setting up a proper development environment.
+Visual Studio Code supports [Development Containers](https://code.visualstudio.com/docs/remote/containers) (i.e. using a Docker image as a development environment). It automates the hassle of setting up a proper development environment.
 
 ## Troubleshooting
 
