@@ -82,7 +82,7 @@ RUN cabal update && \
         hlint-3.10 \
         apply-refact-0.15.0.0 \
         retrie-1.2.3 \
-        hoogle-5.0.19.0 \
+        hoogle-5.0.18.4 \
         ormolu-0.8.1.0 \
         implicit-hie-0.1.4.0
 
