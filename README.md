@@ -23,7 +23,7 @@ Follow the steps below to use the Development Container with Visual Studio Code:
 4. Click `Reopen in Container` when Visual Studio Code prompts you, or open the command palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) and execute the command `>Dev Containers: Reopen in Container`.
 
 > [!WARNING]
-> Building the image initially may take a **long time** (30 minutes to multiple hours).
+> Building the image initially may take a **long time** (anywhere from 15 minutes up to several hours, depending on the speed of your machine and your internet).
 
 ## How does it work
 
