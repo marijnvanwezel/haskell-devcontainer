@@ -44,7 +44,10 @@
         "hoogle-vscode.maxResults": 250,
         "hoogle-vscode.url": "http://127.0.0.1:23196",
         "haskellShell.ghci.arguments": ["ghci"],
-        "haskellShell.ghci.executablePath": "stack"
+        "haskellShell.ghci.executablePath": "stack",
+        "editor.rulers": [
+          90
+        ]
       }
     }
   }
