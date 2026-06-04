@@ -2,8 +2,6 @@
 
 This is an opinionated [Dev Container](https://containers.dev) for Haskell.
 
-![GIF showing the development container in use](./docs/example.gif)
-
 ## Features
 
 The development container has the following features:
@@ -20,12 +18,12 @@ To open the integrated GHCi shell, press the yellow lambda symbol in the top-rig
 Follow the steps below to use the Dev Container with Visual Studio Code:
 
 1. Follow the [Getting Started](https://code.visualstudio.com/docs/remote/containers#_getting-started) instructions to configure Visual Studio Code and Docker for use with Dev Containers.
-2. Copy the `.devcontainer` folder in this repository to the root of your project. You can checkout another branch to use a different version (the default branch is the latest version for which a devcontainer exists).
-3. Reload the project by opening the command palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) and executing the command `>Reload Window` or by closing and re-opening Visual Studio Code.
-4. Click `Reopen in Container` when Visual Studio Code prompts you (see image below), or by opening the command palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) and executing the command `>Dev Containers: Reopen in Container`.
+2. Clone this repository. You can checkout another branch to use a different version.
+3. Open the repository using Visual Studio Code.
+4. Click `Reopen in Container` when Visual Studio Code prompts you, or open the command palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) and execute the command `>Dev Containers: Reopen in Container`.
 
 > [!WARNING]
-> Building the devcontainer initially may take a **long time** (30 minutes to multiple hours).
+> Building the image initially may take a **long time** (30 minutes to multiple hours).
 
 ## How does it work
 
@@ -62,19 +60,6 @@ The container comes with the following (relevant) software pre-installed:
 - [Stack](https://docs.haskellstack.org/en/stable/);
 - [Cabal](https://www.haskell.org/cabal/).
 
-The following packages come pre-installed:
-
-- [fsnotify](https://hackage.haskell.org/package/fsnotify) - cross platform library for file creation, modification, and deletion notification;
-- [haskell-dap](https://hackage.haskell.org/package/haskell-dap) - Haskell implementation of the DAP interface data;
-- [ghci-dap](https://hackage.haskell.org/package/ghci-dap) - a GHCi with DAP machine interface;
-- [haskell-debug-adapter](https://hackage.haskell.org/package/haskell-debug-adapter) - a debug adapter for Haskell debugging system;
-- [hlint](https://hackage.haskell.org/package/hlint) - gives suggestions on how to improve your source code;
-- [apply-refact](https://hackage.haskell.org/package/apply-refact) - perform refactorings specified by the refact library;
-- [retrie](https://hackage.haskell.org/package/retrie) - a tool for codemodding Haskell;
-- [hoogle](https://hackage.haskell.org/package/hoogle) - a Haskell API search engine;
-- [ormolu](https://hackage.haskell.org/package/ormolu) - a formatter for Haskell source code;
-- [implicit-hie](https://hackage.haskell.org/package/implicit-hie) - auto-generate a Stack or Cabal multi-component `hie.yaml` file.
-
 Following VSCode extensions are automatically installed after container is started:
 
 - [Haskell](https://marketplace.visualstudio.com/items?itemName=haskell.haskell);
@@ -86,3 +71,5 @@ Following VSCode extensions are automatically installed after container is start
 - [VSCode PDF](https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf);
 - [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml);
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one).
+
+The development container also comes pre-installed with a number of useful packages.
