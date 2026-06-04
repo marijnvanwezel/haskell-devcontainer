@@ -80,10 +80,7 @@ RUN cabal update && \
         ghci-dap-0.0.27.0 \
         haskell-debug-adapter-0.0.42.0 \
         hlint-3.10 \
-        retrie-1.2.3 \
-        hoogle-5.0.18.4 \
-        ormolu-0.8.1.0 \
-        implicit-hie-0.1.4.0
+        hoogle-5.0.18.4
 
 # Download local Hoogle database
 RUN hoogle generate --download --haskell
