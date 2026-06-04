@@ -1,11 +1,11 @@
 FROM debian:bookworm-slim
 
-# https://www.stackage.org/lts-23.8 (LTS)
-ARG GHC_VERSION=9.8.4
-ARG STACK_VERSION=3.1.1
-ARG STACK_RESOLVER=lts-23.8
-ARG CABAL_VERSION=3.12.1.0
-ARG HLS_VERSION=2.10.0.0
+# https://www.stackage.org/lts-24.43 (LTS)
+ARG GHC_VERSION=9.10.3
+ARG STACK_VERSION=3.3.1
+ARG STACK_RESOLVER=lts-24.43
+ARG CABAL_VERSION=3.14.2.0
+ARG HLS_VERSION=2.14.0.0
 
 ENV LANG=C.UTF-8 \
     DEBIAN_FRONTEND=noninteractive \
@@ -75,15 +75,15 @@ RUN ghcup install hls ${HLS_VERSION} --set
 # Install useful dependencies
 RUN cabal update && \
     cabal install --haddock-hoogle --minimize-conflict-set \
-        fsnotify-0.4.1.0 \
+        fsnotify-0.4.4.0 \
         haskell-dap-0.0.16.0 \
-        ghci-dap-0.0.22.0 \
-        haskell-debug-adapter-0.0.39.0 \
-        hlint-3.8 \
-        apply-refact-0.14.0.0 \
+        ghci-dap-0.0.27.0 \
+        haskell-debug-adapter-0.0.42.0 \
+        hlint-3.10 \
+        apply-refact-0.15.0.0 \
         retrie-1.2.3 \
-        hoogle-5.0.18.4 \
-        ormolu-0.7.4.0 \
+        hoogle-5.0.19.0 \
+        ormolu-0.8.1.0 \
         implicit-hie-0.1.4.0
 
 # Download local Hoogle database
