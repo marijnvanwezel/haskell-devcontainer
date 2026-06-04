@@ -1,6 +1,6 @@
 # A development container for Haskell
 
-This is an opinionated pre-built [Dev Container](https://containers.dev) for Haskell (GHC 9.8.4 LTS).
+This is an opinionated [Dev Container](https://containers.dev) for Haskell.
 
 ![GIF showing the development container in use](./docs/example.gif)
 
@@ -19,10 +19,13 @@ To open the integrated GHCi shell, press the yellow lambda symbol in the top-rig
 
 Follow the steps below to use the Dev Container with Visual Studio Code:
 
-1. Follow the [Getting Started](https://code.visualstudio.com/docs/remote/containers#_getting-started) instructions to configure Visual Studio Code and Docker for use with Dev Containers;
-2. Copy the `.devcontainer` folder in this repository to the root of your project;
-3. Reload the project by opening the command palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) and executing the command `>Reload Window` or by closing and re-opening Visual Studio Code;
-4. Click `Reopen in Container` when Visual Studio Code prompts you (see image below), or by opening the command palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) and executing the command `>Dev Containers: Reopen in Container` (downloading the image initially make take **a while**).
+1. Follow the [Getting Started](https://code.visualstudio.com/docs/remote/containers#_getting-started) instructions to configure Visual Studio Code and Docker for use with Dev Containers.
+2. Copy the `.devcontainer` folder in this repository to the root of your project. You can checkout another branch to use a different version (the default branch is the latest version for which a devcontainer exists).
+3. Reload the project by opening the command palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) and executing the command `>Reload Window` or by closing and re-opening Visual Studio Code.
+4. Click `Reopen in Container` when Visual Studio Code prompts you (see image below), or by opening the command palette (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>) and executing the command `>Dev Containers: Reopen in Container`.
+
+> [!WARNING]
+> Building the devcontainer initially may take a **long time** (30 minutes to multiple hours).
 
 ## How does it work
 
@@ -54,7 +57,7 @@ The container comes with the following (relevant) software pre-installed:
 - [Git](https://git-scm.com/);
 - [Neovim](https://neovim.io/);
 - [GHCUp](https://www.haskell.org/ghcup/);
-- The [Glasgow Haskell Compiler (GHC)](https://www.haskell.org/ghc/) (version 9.8.4 LTS);
+- The [Glasgow Haskell Compiler (GHC)](https://www.haskell.org/ghc/);
 - The [Haskell Language Server (HLS)](https://github.com/haskell/haskell-language-server);
 - [Stack](https://docs.haskellstack.org/en/stable/);
 - [Cabal](https://www.haskell.org/cabal/).
