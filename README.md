@@ -7,7 +7,7 @@ This is an opinionated [Development Container](https://containers.dev) for Haske
 The development container has the following features:
 
 - **Pre-configured Cabal, Stack and HLS:** Cabal, Stack and HLS come pre-installed and pre-configured.
-- **Pre-installed development tools:** The development container comes with a number of generic (Git, Neovim, SSH, etc.) and Haskell-specific (ormolu, implicit-hie, retrie, etc.) development tools pre-installed.
+- **Pre-installed development tools:** The development container comes with a number of generic (Git, Neovim, SSH, etc.) and Haskell-specific development tools pre-installed.
 - **Integrated GHCi:** The development container comes with an integrated GHCi shell.
 - **Offline support:** Hoogle and Hackage are included locally in the container, meaning you do not need an internet connection to find definitions or read documentation.
 
