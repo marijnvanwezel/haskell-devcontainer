@@ -1,9 +1,9 @@
 FROM debian:bookworm-slim
 
-# https://www.stackage.org/lts-24.43 (LTS)
+# https://www.stackage.org/lts-24 (LTS)
 ARG GHC_VERSION=9.10.3
 ARG STACK_VERSION=3.3.1
-ARG STACK_RESOLVER=lts-24.43
+ARG STACK_RESOLVER=lts-24.45
 ARG CABAL_VERSION=3.14.2.0
 ARG HLS_VERSION=2.14.0.0
 
